@@ -16,7 +16,7 @@ Core size - 17 mm
 Motor Parameters
 Motor length - 200mm
 Motor Outside Diameter - 40 mm
-Motor Equipment mass - 0.642 kg
+Motor Equipment mass - 0.2205 kg
 Propellant mass - 0.13kg
 
 
