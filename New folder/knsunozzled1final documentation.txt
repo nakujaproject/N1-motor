@@ -1,0 +1,22 @@
+Design parameters for knsu1final:
+
+Nozzle Dimensions
+Throat diameter:12 mm
+Throat lenghth: 10 mm
+Divergence half angle: 35
+Convergence half angle: 90
+
+Grain Parameters
+Propellant type -  Nakka KNSU
+Propellant grain geometry - BATES grain
+Grain length - 150 mm
+Core size - 17 mm
+
+
+Motor Parameters
+Motor length - 200mm
+Motor Outside Diameter - 40 mm
+Motor Equipment mass - 0.642 kg
+Propellant mass - 0.13kg
+
+
