@@ -13,3 +13,6 @@ Throat (mm) | 12 | 11 | 9 | 9
 Burn Time (s) | 0.69 | 0.69 | 1.05 | 1.11
 Rasp File | | | |
 Thrust Curve | ![](V6-KNSU.JPG) | ![](V7-KNSU.JPG) | ![](V8-KNDX.JPG) | ![](v9-KNDX.JPG)
+
+# Motor selection
+https://docs.google.com/spreadsheets/d/1xEjgxcizVEla5WYd4yQHLdHGN3GgNQR9PQ9QDNRd-24/edit?pli=1#gid=1338705104
