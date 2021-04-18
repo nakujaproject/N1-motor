@@ -1,5 +1,8 @@
 #N1 - Test motors
 
+[Youtube video](https://www.youtube.com/watch?v=pPzbUa3gl14)\
+[Blog](https://nakujaproject.blogspot.com/2021/04/static-firing-test-report-16th-april.html)
+
 Details |V6 | V7 
 --- | --- | --- 
 Total Impulse (N-s)| 31.58 | 36.08 
