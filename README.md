@@ -46,7 +46,7 @@ The following is a list of the contents of each directory in the reporsitory:
 + [Proposed Final Spec](/Proposed-Final-Spec) -contains design simulations to obtain specifications for final motor
 + [Tests](/Tests) -contains all data obtained from static tests
 
-##Techologies
+## Techologies
 The design and simulation of the N1 motor uses the following software:
 1. SRM.xls obtained from the nakka rocketry website. Link attached [here](https://www.nakka-rocketry.net/soft/SRM_2014.1.zip)
 2. openMotor- [Link](https://github.com/reilleya/openMotor)
