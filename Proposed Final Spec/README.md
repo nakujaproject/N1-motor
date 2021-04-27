@@ -23,15 +23,15 @@ https://docs.google.com/spreadsheets/d/1xEjgxcizVEla5WYd4yQHLdHGN3GgNQR9PQ9QDNRd
 Grain Diameter 30mm \
 Grain Length 130mm
 
-performance | KNSU v10 | KNDX v11
---- | --- | ---
-Designation | G146 | G106
-Impulse(Ns) | 109.61 | 115.36
-Propellant mass (Kg) | 0.12 | 0.13
-Average Pressure (MPa) | 1.46 | 1.46
-Peak Pressure (MPa) | 1.89 | 1.79
-Core (mm) | 16 | 14
-Throat (mm) | 11 | 9.5
-Burn Time (s) | 0.72 | 1.05
-Rasp File | [ENG FILE](V10-KNSU/N1-V10-KNSU.eng) | [ENG FILE](V11-KNDX/N1-V11-KNDX.eng)
-Thrust Curve | ![](V10-KNSU/N1-V10.JPG) | ![](V11-KNDX/N1-V11.JPG)
+performance | KNSU v10 | KNDX v11 | KNSB v12
+--- | --- | --- | ---
+Designation | G146 | G106 | G108
+Impulse(Ns) | 109.61 | 115.36 | 110.36
+Propellant mass (Kg) | 0.12 | 0.13 | 0.13
+Average Pressure (MPa) | 1.46 | 1.46 | 1.48
+Peak Pressure (MPa) | 1.89 | 1.79 | 1.79
+Core (mm) | 16 | 14 | 14
+Throat (mm) | 11 | 9.5 | 9.5
+Burn Time (s) | 0.72 | 1.05 | 0.99
+Rasp File | [ENG FILE](V10-KNSU/N1-V10-KNSU.eng) | [ENG FILE](V11-KNDX/N1-V11-KNDX.eng) | [ENG FILE](V12-KNSB/N1-V12-KNSB.eng)
+Thrust Curve | ![](V10-KNSU/N1-V10.JPG) | ![](V11-KNDX/N1-V11.JPG) | ![](V12-KNSB/N1-V12.JPG)
