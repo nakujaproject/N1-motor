@@ -43,7 +43,7 @@ The following factors are taken into consideration when designing the N1 motor:
 ## Directories
 The following is a list of the contents of each directory in the reporsitory:
 + [Drawings](/Drawings) - contains all the design drawings for the N1 motor
-+ [Proposed Final Spec](/Proposed Final Spec) -contains design simulations to obtain specifications for final motor
++ [Proposed Final Spec](/Proposed-Final-Spec) -contains design simulations to obtain specifications for final motor
 + [Tests](/Tests) -contains all data obtained from static tests
 
 ## Technologies
