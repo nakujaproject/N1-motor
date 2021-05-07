@@ -12,7 +12,7 @@
 3. [Methodology](#methodology)
 4. [Key Design Parameters](#key-design-parameters)
 5. [Directories](#directories)
-6. [Technologies](#techmologies)
+6. [Technologies](#technologies)
 
 ***
 
