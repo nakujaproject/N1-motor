@@ -1,0 +1,209 @@
+<FluentXMLReport>
+<version>
+Fluent
+Version: axi, dp, dbns imp, rke (axi, double precision, density-based implicit, realizable k-epsilon)
+Release: 21.1.0
+Title: 
+</version>
+
+<Models>
+
+Models
+------
+
+   Model                        Settings                                
+   ------------------------------------------------------------------
+   Space                        Axisymmetric                            
+   Time                         Steady                                  
+   Viscous                      Realizable k-epsilon turbulence model   
+   Wall Treatment               Standard Wall Functions                 
+   Heat Transfer                Enabled                                 
+   Solidification and Melting   Disabled                                
+   Radiation                    None                                    
+   Species                      Disabled                                
+   Coupled Dispersed Phase      Disabled                                
+   NOx Pollutants               Disabled                                
+   SOx Pollutants               Disabled                                
+   Soot                         Disabled                                
+   Mercury Pollutants           Disabled                                
+   Structure                    Disabled                                
+   Acoustics                    Disabled                                
+   Eulerian Wall Film           Disabled                                
+   Potential/Li-ion Battery     Disabled                                
+   Multiphase                   Disabled                                
+
+</Models>
+
+<MaterialProperties>
+Material Properties
+-------------------
+
+   Material: air (fluid)
+
+      Property                        Units      Method       Value(s)                     
+      ----------------------------------------------------------------------------------
+      Density                         kg/m^3     ideal-gas    #f                           
+      Cp (Specific Heat)              J/(kg K)   constant     1006.43                      
+      Thermal Conductivity            W/(m K)    constant     0.0242                       
+      Viscosity                       kg/(m s)   sutherland   (1.716e-05 273.11 110.56 )   
+      Molecular Weight                kg/kmol    constant     28.966                       
+      Thermal Expansion Coefficient   K^-1       constant     0                            
+      Speed of Sound                  m/s        none         #f                           
+
+   Material: aluminum (solid)
+
+      Property               Units      Method     Value(s)   
+      -----------------------------------------------------
+      Density                kg/m^3     constant   2719       
+      Cp (Specific Heat)     J/(kg K)   constant   871        
+      Thermal Conductivity   W/(m K)    constant   202.4      
+
+</MaterialProperties>
+
+<CellZoneConditions>
+Cell Zone Conditions
+--------------------
+
+   Zones
+
+      name        id   type    
+      ----------------------
+      n1-nozzle   2    fluid   
+
+   Setup Conditions
+
+      n1-nozzle
+
+         Condition       Value   
+         ---------------------
+         Frame Motion?   no      
+
+</CellZoneConditions>
+
+<BoundaryConditions>
+Boundary Conditions
+-------------------
+
+   Zones
+
+      name             id   type              
+      -------------------------------------
+      symmetry         8    axis              
+      pinlet           6    pressure-inlet    
+      wall             18   wall              
+      poutlet          7    pressure-outlet   
+      nozzlewall       9    wall              
+      wall-n1-nozzle   5    wall              
+
+   Setup Conditions
+
+      symmetry
+
+         Condition   Value   
+         -----------------
+
+      pinlet
+
+         Condition                                Value     
+         ------------------------------------------------
+         Gauge Total Pressure [Pa]                2268000   
+         Supersonic/Initial Gauge Pressure [Pa]   2267000   
+         Total Temperature [K]                    1200      
+
+      wall
+
+         Condition                  Value             
+         ------------------------------------------
+         Thermal BC Type            Heat Flux         
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      poutlet
+
+         Condition                        Value   
+         --------------------------------------
+         Gauge Pressure [Pa]              39365   
+         Backflow Total Temperature [K]   243     
+
+      nozzlewall
+
+         Condition                  Value             
+         ------------------------------------------
+         Thermal BC Type            Heat Flux         
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      wall-n1-nozzle
+
+         Condition                  Value             
+         ------------------------------------------
+         Thermal BC Type            Heat Flux         
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+</BoundaryConditions>
+
+<SolverSettings>
+Solver Settings
+---------------
+
+   Equations
+
+      Equation     Solved   
+      -------------------
+      Flow         yes      
+      Turbulence   yes      
+
+   Numerics
+
+      Numeric                         Enabled   
+      ---------------------------------------
+      Absolute Velocity Formulation   yes       
+
+   Under-Relaxation Factors
+
+      Variable                     Relaxation Factor   
+      ----------------------------------------------
+      Turbulent Kinetic Energy     0.8                 
+      Turbulent Dissipation Rate   0.8                 
+      Turbulent Viscosity          1                   
+      Solid                        1                   
+
+   Linear Solver
+
+      Variable                     Solver Type   Termination Criterion   Residual Reduction Tolerance   
+      -----------------------------------------------------------------------------------------------
+      Flow                         F-Cycle       0.1                                                    
+      Turbulent Kinetic Energy     Flexible      0.1                     0.7                            
+      Turbulent Dissipation Rate   Flexible      0.1                     0.7                            
+
+   Discretization Scheme
+
+      Variable                     Scheme                
+      ------------------------------------------------
+      Flow                         Second Order Upwind   
+      Turbulent Kinetic Energy     Second Order Upwind   
+      Turbulent Dissipation Rate   Second Order Upwind   
+
+   Time Marching
+
+      Parameter        Value      
+      -------------------------
+      Solver           Implicit   
+      Courant Number   5          
+
+   Solution Limits
+
+      Quantity                         Limit    
+      ---------------------------------------
+      Minimum Absolute Pressure        1        
+      Maximum Absolute Pressure        5e+10    
+      Minimum Temperature              1        
+      Maximum Temperature              5000     
+      Minimum Turb. Kinetic Energy     1e-14    
+      Minimum Turb. Dissipation Rate   1e-20    
+      Maximum Turb. Viscosity Ratio    100000   
+
+</SolverSettings>
+
+</FluentXMLReport>
