@@ -5,9 +5,9 @@
 
 Details |V6 | V7 
 --- | --- | --- 
-Total Impulse (N-s)| 31.58 | 36.08 
-Specific Impulse (N-s/Kg) | 242.90 | 257.71
-Average Thrust (N) | 23.39 | 17.49 
+Total Impulse (N-s)| 28.07 | 23.50 
+Specific Impulse (N-s/Kg) | 155.94 | 156.68
+Average Thrust (N) | 23.39 | 19.58 
 Peak Thrust (N) | 32 | 51
 Motor Class| E | E
 Fuel | Sucrose | Sucrose 
